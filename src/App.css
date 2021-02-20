@@ -1,0 +1,305 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans);
+
+:root {
+  --fcolor: #fff;
+  --ncolor: #fff;
+}
+
+.Avatar img {
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+}
+#nav-bar-item-Avatar img {
+  height: 35px;
+  margin-top: -25px;
+  position: absolute;
+  right: 30px;
+}
+
+h1 {
+  font-size: 7em;
+  padding: 0;
+  margin: 0;
+  color: aliceblue;
+}
+
+.input-form {
+  position: absolute;
+  z-index: 1;
+  left: 30vw;
+  top: 160vh;
+}
+input {
+  height: 10vw;
+  width: 50vw;
+  background-color: rgba(88, 51, 59, 0.97);
+  opacity: 0.5;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  font-size: 50px;
+  color: rgb(197, 193, 193);
+}
+#nav-bar-overlay {
+  background-color: rgba(28, 21, 19, 0.97);
+  opacity: 0.99;
+  position: fixed;
+  height: 59px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+  display: none;
+}
+#nav-bar-item-top,
+#nav-bar-item-Ask,
+#nav-bar-item-About,
+#nav-bar-item-Avatar {
+  font-family: "Montserrat" sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  color: #eee;
+  padding: 0px 45px 0px 45px;
+  display: inline-block !important;
+  margin-top: 20px;
+  transition: 0.2 ease-in-out;
+}
+
+#nav-bar-item-top:hover,
+#nav-bar-item-Ask:hover,
+#nav-bar-item-About:hover,
+#nav-bar-item-Avatar:hover {
+  color: #e07065;
+}
+
+.nav-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 65px;
+}
+
+@font-face {
+  font-family: "Samarkan Normal";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Samarkan Normal"), url("./assets/SAMARN__.woff") format("woff");
+}
+
+#site-title {
+  font-family: "Samarkan Normal";
+  color: var(--fcolor);
+  font-size: 101px;
+  font-weight: bold;
+  margin-top: 55px;
+  margin-left: 57%;
+  /* margin-right: 50%; */
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+}
+#sections {
+  text-decoration: none;
+  color: var(--ncolor);
+  padding: 16px 20px 16px 21px;
+  margin: 0;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  font-size: 20px;
+  font-weight: 700;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+}
+#other-section {
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--ncolor);
+  float: left;
+  position: absolute;
+  margin-top: 200px;
+  margin: 0;
+  top: 20px;
+  left: -400px;
+
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transition: 0.09s ease-in-out;
+}
+#about-section {
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--ncolor);
+  float: left;
+  position: absolute;
+  margin-top: 200px;
+  margin: 0;
+  top: 20px;
+  right: -309px;
+
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transition: 0.09s ease-in-out;
+}
+#ask-section {
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--ncolor);
+  float: left;
+  position: absolute;
+  margin-top: 200px;
+  margin: 0;
+  top: 20px;
+  left: -269px;
+
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transition: 0.09s ease-in-out;
+}
+#contact-section {
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--ncolor);
+  float: left;
+  position: absolute;
+  margin-top: 200px;
+  margin: 0;
+  top: 20px;
+  right: -459px;
+
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transition: 0.09s ease-in-out;
+}
+.Avatar {
+  float: left;
+  position: absolute;
+  right: -700px;
+  margin: 0;
+  top: 0;
+}
+
+#first-solid-bar {
+  background-image: url(./bg.jpg);
+  margin-top: 33px;
+  margin-left: -9px;
+  margin-right: -9px;
+
+  height: 1600px;
+  position: absolute;
+}
+
+@media (max-width: 1100px) {
+  #site-title {
+    font-family: "Samarkan Normal";
+    color: var(--fcolor);
+    font-size: 81px;
+    font-weight: bold;
+    margin-top: 55px;
+    margin-left: 50%;
+    /* margin-right: 50%; */
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+  }
+  #other-section {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--ncolor);
+    float: left;
+    margin-right: 100px;
+    margin: 0;
+    position: absolute;
+    left: -201px;
+    margin-top: 90px;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transition: 0.09s ease-in-out;
+  }
+  #ask-section {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--ncolor);
+    float: left;
+    margin-right: 100px;
+    margin: 0;
+    position: absolute;
+    left: 171px;
+    margin-top: 90px;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transition: 0.09s ease-in-out;
+  }
+  #contact-section {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--ncolor);
+    float: left;
+    margin-right: 100px;
+    margin: 0;
+    position: absolute;
+    left: 151px;
+    margin-top: 90px;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transition: 0.09s ease-in-out;
+  }
+  #about-section {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--ncolor);
+    float: left;
+    margin-right: 100px;
+    margin: 0;
+    position: absolute;
+    left: 301px;
+    margin-top: 90px;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transition: 0.09s ease-in-out;
+  }
+
+  .Avatar {
+    float: left;
+    /* margin-right: 100px;
+    margin: 0; */
+    position: absolute;
+    left: 450px;
+    top: 20px;
+    /* margin-top: 0px; */
+    /* margin-right: -50%; */
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transition: 0.09s ease-in-out;
+  }
+}
