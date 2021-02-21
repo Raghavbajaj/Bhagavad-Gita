@@ -4,7 +4,7 @@ import "./App.css";
 function Navbar() {
   return (
     <div className="nav-bar">
-      <h3 id="site-title">ANSWERME</h3>
+      <h3 id="site-title">Wanna-Talk</h3>
       <div id="sections">
         <a href="" id="about-section">
           ABOUT
