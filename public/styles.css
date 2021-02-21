@@ -1,5 +1,5 @@
 html {
-  background: url(./bgd.jpg);
+  background: url(./bgd2.jpg);
   background-repeat: no-repeats;
 }
 
@@ -13,10 +13,16 @@ body {
 .hippo {
   position: absolute;
   top: 50%;
-  left: 30vw;
+  left: 25vw;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.text-to {
+  position: absolute;
+  color: #aaaaaa;
+  font-size: 50px;
 }
 
 button {
@@ -25,7 +31,7 @@ button {
   border: 0;
   cursor: pointer;
   padding: 0%;
-  width: 400px;
+  width: 50vw;
 }
 
 .ear-left-outer,

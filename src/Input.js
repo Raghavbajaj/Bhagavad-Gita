@@ -6,27 +6,22 @@ function Input(props) {
 
   function handleSubmit(e) {
     let newobj = [""];
-    for (let i = 1; i < 5; i++) {
-      const c = i;
-      const s = i;
-      e.preventDefault();
-      fetch(`https://vedicscripturesapi.herokuapp.com/gita/${c}/${s}`, {
-        method: "GET",
-        mode: "cors",
-        headers: {
-          "Content-Type": "application/json",
-        },
+
+    const c = 5;
+    const s = 6;
+    e.preventDefault();
+    fetch(`https://vedicscripturesapi.herokuapp.com/gita/${c}/${s}`)
+      .then((res) => res.json())
+      .then((result) => {
+        console.log(result);
+        const obj = [result.toString()];
+        console.log(obj);
+        newobj = obj.push(newobj);
       })
-        .then((res) => res.json())
-        .then((result) => {
-          const obj = [result];
-          console.log(obj);
-          newobj = obj.push(newobj);
-        })
-        .catch((err) => {
-          console.error("Error: ", err);
-        });
-    }
+      .catch((err) => {
+        console.error("Error: ", err);
+      });
+
     setverse(newobj);
     console.log(newobj);
     props.addresult(newobj);

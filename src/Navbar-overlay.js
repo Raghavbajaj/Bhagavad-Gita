@@ -15,7 +15,7 @@ function Navbaroverlay() {
   return (
     <div style={{ display: headerColor }} id="nav-bar-overlay">
       <a href="" id="nav-bar-item-top">
-        AnswerME
+        Wanna-Talk
       </a>
       <a href="" id="nav-bar-item-Ask">
         Ask
